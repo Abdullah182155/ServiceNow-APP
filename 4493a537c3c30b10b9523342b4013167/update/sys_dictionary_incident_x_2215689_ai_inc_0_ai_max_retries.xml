@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="x_2215689_ai_inc_0_ai_failure_reason" table="incident">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="x_2215689_ai_inc_0_ai_max_retries" table="incident">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -13,10 +13,10 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>AI Failure Reason</column_label>
+        <column_label>AI Max Retries</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>3</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -26,15 +26,15 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>x_2215689_ai_inc_0_ai_failure_reason</element>
+        <element>x_2215689_ai_inc_0_ai_max_retries</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Integer">integer</internal_type>
         <mandatory>false</mandatory>
-        <max_length>500</max_length>
+        <max_length>40</max_length>
         <name>incident</name>
         <next_element/>
         <primary>false</primary>
@@ -52,15 +52,15 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-09-07 15:54:45</sys_created_on>
-        <sys_id>911d6d3bc3070b10b9523342b40131c1</sys_id>
-        <sys_name>AI Failure Reason</sys_name>
+        <sys_created_on>2026-09-09 13:19:32</sys_created_on>
+        <sys_id>bcbc5bd4c3574f10b9523342b401311b</sys_id>
+        <sys_name>AI Max Retries</sys_name>
         <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
         <sys_policy/>
         <sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope>
-        <sys_update_name>sys_dictionary_incident_x_2215689_ai_inc_0_ai_failure_reason</sys_update_name>
+        <sys_update_name>sys_dictionary_incident_x_2215689_ai_inc_0_ai_max_retries</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-08 12:12:07</sys_updated_on>
+        <sys_updated_on>2026-09-09 13:46:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
