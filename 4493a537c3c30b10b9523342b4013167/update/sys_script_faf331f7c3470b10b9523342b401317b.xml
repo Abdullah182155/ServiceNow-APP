@@ -28,15 +28,18 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous) {
+    var START = 'x_2215689_ai_inc_0_ai_processing_start';
+    var END   = 'x_2215689_ai_inc_0_ai_processing_end';
 
-    var start = current.getValue('x_2215689_ai_inc_0_ai_processing_start');
-    var end = current.getValue('x_2215689_ai_inc_0_ai_processing_end');
+    if (!current[START].changes() && !current[END].changes()) return;
+
+    var start = current.getValue(START);
+    var end = current.getValue(END);
 
     if (start && end && new GlideDateTime(end).compareTo(new GlideDateTime(start)) < 0) {
         gs.addErrorMessage('AI Processing End must be after AI Processing Start.');
         current.setAbortAction(true);
     }
-
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -44,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>faf331f7c3470b10b9523342b401317b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>validate start_end </sys_name>
         <sys_overrides/>
         <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
@@ -52,7 +55,7 @@
         <sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope>
         <sys_update_name>sys_script_faf331f7c3470b10b9523342b401317b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-07 16:26:20</sys_updated_on>
+        <sys_updated_on>2026-09-10 09:09:11</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

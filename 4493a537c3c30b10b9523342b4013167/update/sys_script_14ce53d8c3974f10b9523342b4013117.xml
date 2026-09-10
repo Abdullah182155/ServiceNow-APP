@@ -3,7 +3,7 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>false</action_insert>
+        <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
         <active>true</active>
@@ -12,7 +12,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>incident</collection>
-        <condition/>
+        <condition>current.x_2215689_ai_inc_0_u_ai_processing_state.changesTo('failed')</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
@@ -28,36 +28,34 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    var STATE       = 'x_2215689_ai_inc_0_u_ai_processing_state';
+    var REVIEW      = 'x_2215689_ai_inc_0_human_review_required';
+    var RETRY_COUNT = 'x_2215689_ai_inc_0_ai_retry_count';
+    var MAX_RETRIES = 'x_2215689_ai_inc_0_ai_max_retries';
+    var RETRY_AT    = 'x_2215689_ai_inc_0_ai_retry_time_out';
 
-    // Only schedule a retry when AI processing fails.
-    if (current.u_ai_processing_state == 'failed') {
-
-        // If human review is required, do not retry automatically.
-        if (current.u_ai_human_review_required == true) {
-            current.u_ai_processing_state = 'awaiting_Approval';
-            current.u_ai_retry_time_out = '';
+    if (current[STATE].changesTo('failed')) {
+        var reviewRequired = current.getValue(REVIEW) === '1' || current.getValue(REVIEW) === true;
+        if (reviewRequired) {
+            current.setValue(STATE, 'awaiting_approval');
+            current.setValue(RETRY_AT, '');
             return;
         }
 
-        // If the maximum number of retries has been reached, stop.
-        var retryCount = parseInt(current.u_ai_retry_count || 0, 10);
-        var maxRetries = parseInt(current.u_ai_max_retries || 3, 10);
+        var retryCount = parseInt(current.getValue(RETRY_COUNT) || 0, 10);
+        var maxRetries = parseInt(current.getValue(MAX_RETRIES) || 3, 10);
 
         if (retryCount >= maxRetries) {
-            current.u_ai_processing_state = 'failed';
-            current.u_ai_retry_time_out = '';
+            current.setValue(RETRY_AT, '');
             return;
         }
 
-        // Schedule the next retry 5 minutes from now.
         var retryTime = new GlideDateTime();
         retryTime.addMinutes(5);
 
-        current.u_ai_retry_time_out = retryTime;
-        current.u_ai_processing_state = 'waiting_for_retry';
-
+        current.setValue(RETRY_AT, retryTime.getValue());
+        current.setValue(STATE, 'waiting_for_retry');
     }
-
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -65,7 +63,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>14ce53d8c3974f10b9523342b4013117</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>AI Schedule Retry</sys_name>
         <sys_overrides/>
         <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
@@ -73,7 +71,7 @@
         <sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope>
         <sys_update_name>sys_script_14ce53d8c3974f10b9523342b4013117</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-09 13:29:35</sys_updated_on>
+        <sys_updated_on>2026-09-10 09:05:37</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

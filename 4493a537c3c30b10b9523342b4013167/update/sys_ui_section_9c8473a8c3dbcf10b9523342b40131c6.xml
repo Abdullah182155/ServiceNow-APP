@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="AI Resolution" section_id="9c8473a8c3dbcf10b9523342b40131c6" sys_domain="global" table="incident" version="3" view="ai_incident_view">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_2215689_ai_inc_0_ai_resolution</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-10 09:41:37</sys_created_on>
+            <sys_id>c184b3a8c3dbcf10b9523342b40131bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="AI Resolution" display_value="AI Resolution" name="incident" sys_domain="global" view="117bb924c3db8f10b9523342b401318d">9c8473a8c3dbcf10b9523342b40131c6</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-10 09:41:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_2215689_ai_inc_0_ai_failure_reason</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-10 09:41:37</sys_created_on>
+            <sys_id>4184b3a8c3dbcf10b9523342b40131be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="AI Resolution" display_value="AI Resolution" name="incident" sys_domain="global" view="117bb924c3db8f10b9523342b401318d">9c8473a8c3dbcf10b9523342b40131c6</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-10 09:41:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_2215689_ai_inc_0_ai_suggestion</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-10 09:41:37</sys_created_on>
+            <sys_id>cd84b3a8c3dbcf10b9523342b40131be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="AI Resolution" display_value="AI Resolution" name="incident" sys_domain="global" view="117bb924c3db8f10b9523342b401318d">9c8473a8c3dbcf10b9523342b40131c6</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-10 09:41:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>AI Resolution</caption>
+            <header>false</header>
+            <name>incident</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-10 09:41:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9c8473a8c3dbcf10b9523342b40131c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>incident</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope>
+            <sys_update_name>sys_ui_section_9c8473a8c3dbcf10b9523342b40131c6</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-10 09:41:34</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="AI Incident View" name="ai_incident_view">117bb924c3db8f10b9523342b401318d</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

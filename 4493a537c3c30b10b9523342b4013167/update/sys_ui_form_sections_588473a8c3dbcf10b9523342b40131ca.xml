@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="588473a8c3dbcf10b9523342b40131ca" sys_domain="global" table="incident" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-10 09:41:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>248473a8c3dbcf10b9523342b40131ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="117bb924c3db8f10b9523342b401318d">588473a8c3dbcf10b9523342b40131ca</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="117bb924c3db8f10b9523342b401318d">67100e20c31f8f10b9523342b40131de</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-10 09:41:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-10 09:41:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2c8473a8c3dbcf10b9523342b40131eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="117bb924c3db8f10b9523342b401318d">588473a8c3dbcf10b9523342b40131ca</sys_ui_form>
+            <sys_ui_section caption="AI Processing" display_value="AI Processing" name="incident" sys_domain="global" view="117bb924c3db8f10b9523342b401318d">dc8473a8c3dbcf10b9523342b40131c2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-10 09:41:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-10 09:41:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e08473a8c3dbcf10b9523342b40131ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="117bb924c3db8f10b9523342b401318d">588473a8c3dbcf10b9523342b40131ca</sys_ui_form>
+            <sys_ui_section caption="AI Classification" display_value="AI Classification" name="incident" sys_domain="global" view="117bb924c3db8f10b9523342b401318d">148473a8c3dbcf10b9523342b40131c5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-10 09:41:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-10 09:41:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a484b3a8c3dbcf10b9523342b4013106</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="117bb924c3db8f10b9523342b401318d">588473a8c3dbcf10b9523342b40131ca</sys_ui_form>
+            <sys_ui_section caption="AI Resolution" display_value="AI Resolution" name="incident" sys_domain="global" view="117bb924c3db8f10b9523342b401318d">9c8473a8c3dbcf10b9523342b40131c6</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-10 09:41:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-10 09:41:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6084b3a8c3dbcf10b9523342b401310e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="117bb924c3db8f10b9523342b401318d">588473a8c3dbcf10b9523342b40131ca</sys_ui_form>
+            <sys_ui_section caption="AI Metadata" display_value="AI Metadata" name="incident" sys_domain="global" view="117bb924c3db8f10b9523342b401318d">188473a8c3dbcf10b9523342b40131c8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-10 09:41:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>incident</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-10 09:41:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>588473a8c3dbcf10b9523342b40131ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>incident</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope>
+            <sys_update_name>sys_ui_form_sections_588473a8c3dbcf10b9523342b40131ca</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-10 09:41:35</sys_updated_on>
+            <sys_user/>
+            <view display_value="AI Incident View" name="ai_incident_view">117bb924c3db8f10b9523342b401318d</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

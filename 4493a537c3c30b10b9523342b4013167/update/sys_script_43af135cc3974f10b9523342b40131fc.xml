@@ -12,7 +12,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>incident</collection>
-        <condition/>
+        <condition>current.x_2215689_ai_inc_0_u_ai_processing_state.changesTo('complete')</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
@@ -28,11 +28,12 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    var STATE    = 'x_2215689_ai_inc_0_u_ai_processing_state';
+    var RETRY_AT = 'x_2215689_ai_inc_0_ai_retry_time_out';
 
-    if (current.u_ai_processing_state == 'complete') {
-        current.u_ai_retry_time_out = '';
+    if (current[STATE].changesTo('complete')) {
+        current.setValue(RETRY_AT, '');
     }
-
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -40,7 +41,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>43af135cc3974f10b9523342b40131fc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>AI Clear Retry After Success</sys_name>
         <sys_overrides/>
         <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
@@ -48,7 +49,7 @@
         <sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope>
         <sys_update_name>sys_script_43af135cc3974f10b9523342b40131fc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-09 13:33:06</sys_updated_on>
+        <sys_updated_on>2026-09-10 09:06:45</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
