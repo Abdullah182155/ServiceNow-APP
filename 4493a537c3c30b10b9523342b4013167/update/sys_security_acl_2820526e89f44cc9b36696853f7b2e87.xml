@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+  <sys_security_acl action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>2820526e89f44cc9b36696853f7b2e87</sys_id>
+    <sys_scope display_value="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_scope>
+    <sys_update_name>sys_security_acl_2820526e89f44cc9b36696853f7b2e87</sys_update_name>
+    <active>true</active>
+    <admin_overrides>true</admin_overrides>
+    <advanced>false</advanced>
+    <applies_to/>
+    <condition/>
+    <decision_type>allow</decision_type>
+    <description>Allow integration role to write the ai_confidence field on the Incident table</description>
+    <name>incident.ai_confidence</name>
+    <operation display_value="write">write</operation>
+    <script/>
+    <security_attribute/>
+    <sys_name>incident.ai_confidence</sys_name>
+    <type>record</type>
+  </sys_security_acl>
+</record_update>
