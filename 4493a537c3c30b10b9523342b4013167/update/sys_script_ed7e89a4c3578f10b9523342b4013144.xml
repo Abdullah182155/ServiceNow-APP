@@ -76,11 +76,24 @@
             event_type = "Insert";
         }
         else{
-            event_type = "Update";
-        }
+		if (!current.isNewRecord()) {
+			var relevantChange = current.category.changes() ||
+				current.x_2215689_ai_inc_0_u_ai_processing_state.changes() ||
+				current.x_2215689_ai_inc_0_human_lock.changes() ||
+				current.x_2215689_ai_inc_0_ai_enabled.changes() ||
+				current.active.changes();
+			if (!relevantChange) {
+				gs.info("AI Orchestrator Suppression [" + current.number + "]: No relevant field changed.");
+				return;
+				}
+			else{
+				event_type = 'Update';
+			}
+			}
+		}
         var payload = {
             "event_id": gs.generateGUID(),
-            "incident_sys_id": current.getValue('sys_id'),
+            "sys_id": current.getValue('sys_id'),
             "number": current.getValue('number'),
             "event_type": event_type
         };
@@ -90,10 +103,7 @@
         r.setEndpoint('https://webhook.site/818273b6-89e1-4206-8a48-64eb86cd9b42');
         r.setHttpMethod('POST');
         r.setRequestHeader('Content-Type', 'application/json');
-
-		// TODO: Uncomment and add Mostafa's OAuth profile once S1.2 is done
-        // r.setAuthenticationProfile('oauth2', 'INSERT_MOSTAFA_PROFILE_SYS_ID');
-		
+        r.setAuthenticationProfile('oauth2', 'fa6a7189c39f8350b9523342b401311e');
         r.setRequestBody(JSON.stringify(payload));
         r.executeAsync();
 
@@ -101,7 +111,6 @@
     } catch (ex) {
         gs.error('Failed to send incident: ' + ex.message);
     }
-
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -109,7 +118,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ed7e89a4c3578f10b9523342b4013144</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>AI Eligibility Check</sys_name>
         <sys_overrides/>
         <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
@@ -117,7 +126,7 @@
         <sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope>
         <sys_update_name>sys_script_ed7e89a4c3578f10b9523342b4013144</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-10 00:18:59</sys_updated_on>
+        <sys_updated_on>2026-09-11 15:41:21</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
