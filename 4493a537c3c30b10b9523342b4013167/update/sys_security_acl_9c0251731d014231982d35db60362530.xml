@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
   <sys_security_acl action="INSERT_OR_UPDATE" apply_defaults="true">
-    <sys_id>a80a1ee1b8d143299e0a8651da148f96</sys_id>
+    <sys_id>9c0251731d014231982d35db60362530</sys_id>
     <sys_scope display_value="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_scope>
-    <sys_update_name>sys_security_acl_a80a1ee1b8d143299e0a8651da148f96</sys_update_name>
-    <active>false</active>
+    <sys_update_name>sys_security_acl_9c0251731d014231982d35db60362530</sys_update_name>
+    <active>true</active>
     <admin_overrides>false</admin_overrides>
     <advanced>true</advanced>
     <applies_to/>
     <condition/>
     <decision_type>deny</decision_type>
-    <description>DEACTIVATED — replaced by v2. Stale role exemption could not be removed.</description>
-    <name>incident.priority</name>
+    <description>Deny integration role from writing the assigned_to field on the Incident table</description>
+    <name>incident.assigned_to</name>
     <operation display_value="write">write</operation>
-    <script><![CDATA[answer = false;]]></script>
+    <script><![CDATA[
+  answer = !gs.hasRole('x_2215689_ai_inc_0.integration');
+]]></script>
     <security_attribute/>
-    <sys_name>incident.priority</sys_name>
+    <sys_name>incident.assigned_to</sys_name>
     <type>record</type>
   </sys_security_acl>
 </record_update>

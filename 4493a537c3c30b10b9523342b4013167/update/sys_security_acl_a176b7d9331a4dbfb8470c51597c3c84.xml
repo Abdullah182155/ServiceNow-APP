@@ -9,7 +9,7 @@
     <applies_to/>
     <condition/>
     <decision_type>allow</decision_type>
-    <description>DEACTIVATED — orphaned table-level write ACL from .map() bug. Do not re-enable.</description>
+    <description>DEACTIVATED — orphaned table-level write ACL from .map() bug.</description>
     <name>incident</name>
     <operation display_value="write">write</operation>
     <script><![CDATA[answer = false;]]></script>

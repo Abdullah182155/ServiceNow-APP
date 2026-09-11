@@ -3,18 +3,16 @@
     <sys_id>bb66330ea55049f696297de4b0db249a</sys_id>
     <sys_scope display_value="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_scope>
     <sys_update_name>sys_security_acl_bb66330ea55049f696297de4b0db249a</sys_update_name>
-    <active>true</active>
+    <active>false</active>
     <admin_overrides>false</admin_overrides>
     <advanced>true</advanced>
     <applies_to/>
     <condition/>
     <decision_type>deny</decision_type>
-    <description>Deny integration role from writing the assignment_group field on the Incident table</description>
+    <description>DEACTIVATED — replaced by v2. Stale role exemption could not be removed.</description>
     <name>incident.assignment_group</name>
     <operation display_value="write">write</operation>
-    <script><![CDATA[
-  answer = !gs.hasRole('x_2215689_ai_inc_0.integration');
-]]></script>
+    <script><![CDATA[answer = false;]]></script>
     <security_attribute/>
     <sys_name>incident.assignment_group</sys_name>
     <type>record</type>
