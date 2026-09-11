@@ -1,30 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
-    <sys_security_acl action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <admin_overrides>true</admin_overrides>
-        <advanced>false</advanced>
-        <applies_to/>
-        <condition/>
-        <controlled_by_refs/>
-        <decision_type>deny</decision_type>
-        <description>Deny integration role from writing the comments field on the Incident table</description>
-        <local_or_existing/>
-        <name>incident.comments</name>
-        <operation display_value="write">write</operation>
-        <script/>
-        <security_attribute/>
-        <sys_class_name>sys_security_acl</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-09-10 06:59:46</sys_created_on>
-        <sys_id>55d00a22f77c4aa3a4ecc7334f167422</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>incident.comments</sys_name>
-        <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope>
-        <sys_update_name>sys_security_acl_55d00a22f77c4aa3a4ecc7334f167422</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-10 06:59:46</sys_updated_on>
-        <type display_value="record">record</type>
-    </sys_security_acl>
+  <sys_security_acl action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>55d00a22f77c4aa3a4ecc7334f167422</sys_id>
+    <sys_scope display_value="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_scope>
+    <sys_update_name>sys_security_acl_55d00a22f77c4aa3a4ecc7334f167422</sys_update_name>
+    <active>true</active>
+    <admin_overrides>false</admin_overrides>
+    <advanced>true</advanced>
+    <applies_to/>
+    <condition/>
+    <decision_type>deny</decision_type>
+    <description>Deny integration role from writing the comments field on the Incident table</description>
+    <name>incident.comments</name>
+    <operation display_value="write">write</operation>
+    <script><![CDATA[
+  answer = !gs.hasRole('x_2215689_ai_inc_0.integration');
+]]></script>
+    <security_attribute/>
+    <sys_name>incident.comments</sys_name>
+    <type>record</type>
+  </sys_security_acl>
 </record_update>

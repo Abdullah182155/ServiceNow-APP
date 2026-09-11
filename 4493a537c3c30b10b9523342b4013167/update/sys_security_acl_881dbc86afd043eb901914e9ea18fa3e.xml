@@ -4,15 +4,17 @@
     <sys_scope display_value="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_scope>
     <sys_update_name>sys_security_acl_881dbc86afd043eb901914e9ea18fa3e</sys_update_name>
     <active>true</active>
-    <admin_overrides>true</admin_overrides>
-    <advanced>false</advanced>
+    <admin_overrides>false</admin_overrides>
+    <advanced>true</advanced>
     <applies_to/>
     <condition/>
     <decision_type>deny</decision_type>
     <description>Deny integration role from writing the x_2215689_ai_inc_0_human_lock field on the Incident table</description>
     <name>incident.x_2215689_ai_inc_0_human_lock</name>
     <operation display_value="write">write</operation>
-    <script/>
+    <script><![CDATA[
+  answer = !gs.hasRole('x_2215689_ai_inc_0.integration');
+]]></script>
     <security_attribute/>
     <sys_name>incident.x_2215689_ai_inc_0_human_lock</sys_name>
     <type>record</type>
