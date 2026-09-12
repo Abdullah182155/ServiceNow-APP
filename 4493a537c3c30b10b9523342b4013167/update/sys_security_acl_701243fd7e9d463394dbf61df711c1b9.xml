@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+  <sys_security_acl action="INSERT_OR_UPDATE" apply_defaults="true">
+    <sys_id>701243fd7e9d463394dbf61df711c1b9</sys_id>
+    <sys_scope display_value="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_scope>
+    <sys_update_name>sys_security_acl_701243fd7e9d463394dbf61df711c1b9</sys_update_name>
+    <active>true</active>
+    <admin_overrides>false</admin_overrides>
+    <advanced>true</advanced>
+    <applies_to/>
+    <condition/>
+    <decision_type>allow</decision_type>
+    <description>Allow write to assignment_group for all authenticated users except integration role</description>
+    <name>incident.assignment_group</name>
+    <operation display_value="write">write</operation>
+    <script><![CDATA[
+  answer = !gs.hasRole('x_2215689_ai_inc_0.integration');
+]]></script>
+    <security_attribute>239bdf0c47d23110ba46ff58936d4330</security_attribute>
+    <sys_name>incident.assignment_group</sys_name>
+    <type>record</type>
+  </sys_security_acl>
+</record_update>
