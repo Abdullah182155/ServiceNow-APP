@@ -15,7 +15,7 @@
     <script><![CDATA[
   answer = !gs.hasRole('x_2215689_ai_inc_0.integration');
 ]]></script>
-    <security_attribute>239bdf0c47d23110ba46ff58936d4330</security_attribute>
+    <security_attribute/>
     <sys_name>incident.assigned_to</sys_name>
     <type>record</type>
   </sys_security_acl>
