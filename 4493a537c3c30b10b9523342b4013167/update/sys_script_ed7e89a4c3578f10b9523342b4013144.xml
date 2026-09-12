@@ -54,10 +54,10 @@
         return;
     }
 
-    // Condition 5: already running
+    // Condition 5: already running or blocked
     var state = current.x_2215689_ai_inc_0_u_ai_processing_state;
-    if (state == 'in_progress' || state == 'waiting_for_retry' || state == 'awaiting Approval') {
-        gs.info("AI Orchestrator Suppression [" + current.number + "]: Incident is being processed.");
+    if (state == 'in_progress' || state == 'waiting_for_retry' || state == 'awaiting_approval' || state == 'failed') {
+        gs.info("AI Orchestrator Suppression [" + current.number + "]: Incident is being processed or blocked.");
         return;
     }
 
@@ -69,28 +69,25 @@
 
     // If we reach this point, the incident is eligible.
     try {
-
         var event_type = '';
 
-        if (current.isNewRecord()){
+        if (current.operation() === 'insert'){
             event_type = "Insert";
+        } else {
+            // Check for relevant updates
+            var relevantChange = current.category.changes() ||
+                current.x_2215689_ai_inc_0_u_ai_processing_state.changesTo('pending') ||
+                current.x_2215689_ai_inc_0_human_lock.changes() ||
+                current.x_2215689_ai_inc_0_ai_enabled.changes() ||
+                current.active.changes();
+            
+            if (!relevantChange) {
+                gs.info("AI Orchestrator Suppression [" + current.number + "]: No relevant field changed.");
+                return;
+            }
+            event_type = 'Update';
         }
-        else{
-		if (!current.isNewRecord()) {
-			var relevantChange = current.category.changes() ||
-				current.x_2215689_ai_inc_0_u_ai_processing_state.changes() ||
-				current.x_2215689_ai_inc_0_human_lock.changes() ||
-				current.x_2215689_ai_inc_0_ai_enabled.changes() ||
-				current.active.changes();
-			if (!relevantChange) {
-				gs.info("AI Orchestrator Suppression [" + current.number + "]: No relevant field changed.");
-				return;
-				}
-			else{
-				event_type = 'Update';
-			}
-			}
-		}
+
         var payload = {
             "event_id": gs.generateGUID(),
             "sys_id": current.getValue('sys_id'),
@@ -99,7 +96,6 @@
         };
 
         var r = new sn_ws.RESTMessageV2();
-        // Replace YOUR_ENDPOINT with your public ngrok URL, keep /webhook:
         r.setEndpoint('https://webhook.site/818273b6-89e1-4206-8a48-64eb86cd9b42');
         r.setHttpMethod('POST');
         r.setRequestHeader('Content-Type', 'application/json');
@@ -107,7 +103,7 @@
         r.setRequestBody(JSON.stringify(payload));
         r.executeAsync();
 
-        gs.info('Sent incident ' + current.getValue('number'));
+        gs.info('Queued incident ' + current.getValue('number'));
     } catch (ex) {
         gs.error('Failed to send incident: ' + ex.message);
     }
@@ -118,7 +114,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ed7e89a4c3578f10b9523342b4013144</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>AI Eligibility Check</sys_name>
         <sys_overrides/>
         <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
@@ -126,9 +122,9 @@
         <sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope>
         <sys_update_name>sys_script_ed7e89a4c3578f10b9523342b4013144</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-11 15:41:21</sys_updated_on>
+        <sys_updated_on>2026-09-12 15:53:55</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>after</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=ed7e89a4c3578f10b9523342b4013144"/>
 </record_update>
