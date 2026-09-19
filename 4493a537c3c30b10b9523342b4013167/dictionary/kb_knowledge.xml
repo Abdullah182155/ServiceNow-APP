@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="all_tables.text_index_translations=true,attachment_index=true,document_viewer_audit=all,global_search_config_handler=KnowledgeArticle,text_index_attachment_displayed=true,text_index_enable_idf=true,text_index_filter_junk=false,use_document_viewer=true" audit="true" db_object_id="8312e184a56503108bb220b7a4d21289" label="Knowledge" max_length="40" name="kb_knowledge" text_index="true" type="collection">
+        <element label="Service" max_length="100" name="x_2215689_ai_inc_0_u_service" type="string"/>
+        <element label="Article Version" max_length="40" name="x_2215689_ai_inc_0_u_article_version" type="integer"/>
+        <element label="Article Number" max_length="100" name="x_2215689_ai_inc_0_u_article_number" type="string"/>
+        <element choice="1" label="Security Level" max_length="40" name="x_2215689_ai_inc_0_u_security_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="internal" sequence="100" value="internal"/>
+                <element inactive_on_update="false" label="confidential" sequence="200" value="confidential"/>
+            </choice>
+        </element>
+    </element>
+</database>

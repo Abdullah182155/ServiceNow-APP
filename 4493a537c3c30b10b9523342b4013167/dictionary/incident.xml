@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="all_tables.query_hints=true,email_client=true,hasWorkflow=true,live_feed=true,query_hints=true" audit="true" db_object_id="87e1e180a56503108bb220b7a4d212ec" extends="task" label="Incident" max_length="40" name="incident" text_index="true" type="collection">
+        <element label="Human Lock" max_length="40" name="x_2215689_ai_inc_0_human_lock" type="boolean"/>
+        <element default="0" label="AI Retry Count" max_length="40" name="x_2215689_ai_inc_0_ai_retry_count" type="integer"/>
+        <element label="AI Agent Version" max_length="100" name="x_2215689_ai_inc_0_ai_agent_version" type="string"/>
+        <element choice="3" default="pending" label="AI Processing State" max_length="40" name="x_2215689_ai_inc_0_u_ai_processing_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="pending" value="pending"/>
+                <element inactive_on_update="false" label="Failed" value="failed"/>
+                <element inactive_on_update="false" label="In Progress" value="in_progress"/>
+                <element inactive_on_update="false" label="Complete" value="complete"/>
+                <element inactive_on_update="false" label="Waiting_for_retry" value="waiting_for_retry"/>
+                <element inactive_on_update="false" label="Awaiting Approval" value="awaiting_approval"/>
+            </choice>
+        </element>
+        <element label="AI Retry Time Out" max_length="40" name="x_2215689_ai_inc_0_ai_retry_time_out" type="glide_date_time"/>
+        <element label="AI Processing Start" max_length="40" name="x_2215689_ai_inc_0_ai_processing_start" type="glide_date_time"/>
+        <element label="AI Suggestion" max_length="4000" name="x_2215689_ai_inc_0_ai_suggestion" type="string"/>
+        <element label="Human Review Required" max_length="40" name="x_2215689_ai_inc_0_human_review_required" type="boolean"/>
+        <element label="AI Resolution" max_length="4000" name="x_2215689_ai_inc_0_ai_resolution" type="string"/>
+        <element label="AI Failure Reason" max_length="4000" name="x_2215689_ai_inc_0_ai_failure_reason" type="string"/>
+        <element default="true" label="AI Enabled" max_length="255" name="x_2215689_ai_inc_0_ai_enabled" type="boolean"/>
+        <element default="3" label="AI Max Retries" max_length="40" name="x_2215689_ai_inc_0_ai_max_retries" type="integer"/>
+        <element label="AI Confidence" max_length="20" name="x_2215689_ai_inc_0_ai_confidence" type="decimal"/>
+        <element label="AI Classification" max_length="100" name="x_2215689_ai_inc_0_u_ai_classification" type="string"/>
+        <element label="AI Model Name" max_length="100" name="x_2215689_ai_inc_0_ai_model_name" type="string"/>
+        <element label="AI Processing End" max_length="40" name="x_2215689_ai_inc_0_ai_processing_end" type="glide_date_time"/>
+    </element>
+</database>

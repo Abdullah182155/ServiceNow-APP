@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="40c244e4c3db4f10b9523342b40131e5" label="AI Execution Log" max_length="40" name="x_2215689_ai_inc_0_ai_execution_log" type="collection">
+        <element label="Incident" mandatory="true" max_length="32" name="incident" reference="incident" type="reference"/>
+        <element label="Agent" mandatory="true" max_length="100" name="agent" type="string"/>
+        <element label="Action" mandatory="true" max_length="100" name="action" type="string"/>
+        <element label="Timestamp" mandatory="true" max_length="40" name="timestamp" type="glide_date_time"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="blocked" sequence="3" value="blocked"/>
+                <element inactive_on_update="false" label="succeeded" sequence="1" value="succeeded"/>
+                <element inactive_on_update="false" label="started" sequence="0" value="started"/>
+                <element inactive_on_update="false" label="awaiting_approval" sequence="4" value="awaiting_approval"/>
+                <element inactive_on_update="false" label="failed" sequence="2" value="failed"/>
+                <element inactive_on_update="false" label="abandoned" sequence="5" value="abandoned"/>
+            </choice>
+        </element>
+        <element label="Result" mandatory="true" max_length="4000" name="result" type="string"/>
+        <element label="Execution ID" mandatory="true" max_length="100" name="execution_id" type="string"/>
+        <element label="Error" max_length="4000" name="error" type="string"/>
+        <index name="index">
+            <element name="execution_id"/>
+        </index>
+        <index name="index2">
+            <element name="incident"/>
+        </index>
+    </element>
+</database>

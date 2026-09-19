@@ -53,7 +53,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-07 15:57:09</sys_created_on>
-        <sys_id>2c8ded7bc3070b10b9523342b40131cd</sys_id>
         <sys_name>AI Agent Version</sys_name>
         <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
         <sys_policy/>

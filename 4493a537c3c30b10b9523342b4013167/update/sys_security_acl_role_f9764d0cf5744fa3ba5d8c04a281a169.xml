@@ -9,7 +9,7 @@
         <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
         <sys_policy/>
         <sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope>
-        <sys_security_acl display_value="incident.ai_model_name">0e57dce40a684744ac904fff67560cf8</sys_security_acl>
+        <sys_security_acl display_value="incident.x_2215689_ai_inc_0_ai_model_name">0e57dce40a684744ac904fff67560cf8</sys_security_acl>
         <sys_update_name>sys_security_acl_role_f9764d0cf5744fa3ba5d8c04a281a169</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-09-10 06:50:17</sys_updated_on>

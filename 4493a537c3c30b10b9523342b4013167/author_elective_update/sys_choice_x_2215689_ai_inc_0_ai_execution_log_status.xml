@@ -6,7 +6,6 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2026-09-09 16:30:13</sys_created_on>
-            <sys_id>2478c0e0c31f4f10b9523342b40131aa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>status</sys_name>
             <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
@@ -30,7 +29,6 @@
             <sys_created_on>2026-09-09 16:30:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>2c78c0e0c31f4f10b9523342b40131a9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-09-09 16:30:13</sys_updated_on>
@@ -50,7 +48,6 @@
             <sys_created_on>2026-09-09 16:30:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>2878c0e0c31f4f10b9523342b40131ac</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-09-09 16:30:13</sys_updated_on>
@@ -70,7 +67,6 @@
             <sys_created_on>2026-09-09 16:30:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>ac78c0e0c31f4f10b9523342b40131ad</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-09-09 16:30:13</sys_updated_on>
@@ -90,7 +86,6 @@
             <sys_created_on>2026-09-09 16:30:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>2478c0e0c31f4f10b9523342b40131af</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-09-09 16:30:13</sys_updated_on>
@@ -110,11 +105,29 @@
             <sys_created_on>2026-09-09 16:30:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>a878c0e0c31f4f10b9523342b40131b0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-09-09 16:30:13</sys_updated_on>
             <value>awaiting_approval</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>abandoned</label>
+            <language>en</language>
+            <name>x_2215689_ai_inc_0_ai_execution_log</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-12 11:01:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-12 11:01:45</sys_updated_on>
+            <value>abandoned</value>
         </sys_choice>
     </sys_choice>
 </record_update>

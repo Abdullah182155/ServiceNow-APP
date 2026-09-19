@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity">
+    <oauth_entity action="DELETE">
+        <access>package_private</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <allow_snc_user_exchange>false</allow_snc_user_exchange>
+        <auth_aig_client>false</auth_aig_client>
+        <auth_cimd_client>false</auth_cimd_client>
+        <auth_code_lifespan>0</auth_code_lifespan>
+        <auth_url/>
+        <bff_cookie_exchange_allowed>false</bff_cookie_exchange_allowed>
+        <bind_token_to_session>false</bind_token_to_session>
+        <certificate_url/>
+        <client_id>75ebd6fd1f16488ea8e92c69eb8c0349</client_id>
+        <client_secret>﷞﷟﷒7839c728c357cf10b9523342b4013186﷬﷔1﷬﷭3IOMouu_pJR7PB04-69ugA==w417xF22yPozVsFA1p9uyAXImByHGY41YicoogFBNwxb94y-edyKXwPMRvDXnm-T﷮﷯</client_secret>
+        <client_type/>
+        <client_uuid>11083dc9c39f8350b9523342b40131f8</client_uuid>
+        <code_challenge_method>S256</code_challenge_method>
+        <comments/>
+        <default_grant_type>password</default_grant_type>
+        <extend_refresh_token_expiry>false</extend_refresh_token_expiry>
+        <id_token_lifespan>0</id_token_lifespan>
+        <inbound_grant_type>not_applicable</inbound_grant_type>
+        <jwt_provider/>
+        <login_url/>
+        <logo_url/>
+        <message_signature_lifespan>0</message_signature_lifespan>
+        <mobile_client>false</mobile_client>
+        <name>ProfileSysID</name>
+        <oauth_api_script/>
+        <only_rest_processor>false</only_rest_processor>
+        <protocol_name/>
+        <public_client>false</public_client>
+        <redirect_url>https://dev323650.service-now.com/oauth_redirect.do</redirect_url>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <refresh_token_url/>
+        <restricted_binding>false</restricted_binding>
+        <revoke_token_url/>
+        <salt>0</salt>
+        <scope_restriction_status>unrestricted</scope_restriction_status>
+        <send_client_credentials_as>request_body_parameter</send_client_credentials_as>
+        <skip_authorize>false</skip_authorize>
+        <sub_claim>sys_id</sub_claim>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 14:05:07</sys_created_on>
+        <sys_id>51083dc9c39f8350b9523342b40131f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ProfileSysID</sys_name>
+        <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope>
+        <sys_update_name>oauth_entity_51083dc9c39f8350b9523342b40131f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 14:05:07</sys_updated_on>
+        <token_format>opaque</token_format>
+        <token_url>https://dev323650.service-now.com/oauth_token.do</token_url>
+        <type>oauth_provider</type>
+        <use_mutual_auth>false</use_mutual_auth>
+        <use_pkce>false</use_pkce>
+        <user/>
+    </oauth_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</application>
+        <file_path/>
+        <instance_id>e980b97d3b382250baf6048aa4e45a36</instance_id>
+        <instance_name>dev323650</instance_name>
+        <name>oauth_entity_51083dc9c39f8350b9523342b40131f8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity"><oauth_entity action="INSERT_OR_UPDATE"><access>package_private</access><access_token_lifespan>1800</access_token_lifespan><active>true</active><allow_snc_user_exchange>false</allow_snc_user_exchange><auth_aig_client>false</auth_aig_client><auth_cimd_client>false</auth_cimd_client><auth_code_lifespan>0</auth_code_lifespan><auth_url/><bff_cookie_exchange_allowed>false</bff_cookie_exchange_allowed><bind_token_to_session>false</bind_token_to_session><certificate_url/><client_id>75ebd6fd1f16488ea8e92c69eb8c0349</client_id><client_secret>﷞﷟﷒7839c728c357cf10b9523342b4013186﷬﷔1﷬﷭3IOMouu_pJR7PB04-69ugA==w417xF22yPozVsFA1p9uyAXImByHGY41YicoogFBNwxb94y-edyKXwPMRvDXnm-T﷮﷯</client_secret><client_type/><client_uuid>11083dc9c39f8350b9523342b40131f8</client_uuid><code_challenge_method>S256</code_challenge_method><comments/><default_grant_type>password</default_grant_type><extend_refresh_token_expiry>false</extend_refresh_token_expiry><id_token_lifespan>0</id_token_lifespan><inbound_grant_type>not_applicable</inbound_grant_type><jwt_provider/><login_url/><logo_url/><message_signature_lifespan>0</message_signature_lifespan><mobile_client>false</mobile_client><name>ProfileSysID</name><oauth_api_script/><only_rest_processor>false</only_rest_processor><protocol_name/><public_client>false</public_client><redirect_url>https://dev323650.service-now.com/oauth_redirect.do</redirect_url><refresh_token_lifespan>8640000</refresh_token_lifespan><refresh_token_url/><restricted_binding>false</restricted_binding><revoke_token_url/><salt>0</salt><scope_restriction_status>unrestricted</scope_restriction_status><send_client_credentials_as>request_body_parameter</send_client_credentials_as><skip_authorize>false</skip_authorize><sub_claim>sys_id</sub_claim><sys_class_name>oauth_entity</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-11 14:05:07</sys_created_on><sys_id>51083dc9c39f8350b9523342b40131f8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ProfileSysID</sys_name><sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package><sys_policy/><sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope><sys_update_name>oauth_entity_51083dc9c39f8350b9523342b40131f8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-11 14:05:07</sys_updated_on><token_format>opaque</token_format><token_url>https://dev323650.service-now.com/oauth_token.do</token_url><type>oauth_provider</type><use_mutual_auth>false</use_mutual_auth><use_pkce>false</use_pkce><user/></oauth_entity></record_update>]]></payload>
+        <payload_hash>86281856</payload_hash>
+        <record_name>ProfileSysID</record_name>
+        <reverted_from/>
+        <source>4c93a537c3c30b10b9523342b401317c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 14:05:08</sys_created_on>
+        <sys_id>766a3141c3df8350b9523342b401311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a090c9534d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 14:05:08</sys_updated_on>
+        <type>Application Registries</type>
+        <update_guid>366a3141ebdf83506216bf461cd6b51e</update_guid>
+        <update_guid_history>366a3141ebdf83506216bf461cd6b51e:86281856</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ProfileSysID">1ebc3605c31bc350b9523342b401315b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 18:54:50</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity">oauth_entity</sys_db_object>
+        <sys_id>00fa8067699941ec80041c02f1790910</sys_id>
+        <sys_metadata>51083dc9c39f8350b9523342b40131f8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ProfileSysID</sys_name>
+        <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope>
+        <sys_scope_delete display_value="">10876c311171401a8379100c712f4c24</sys_scope_delete>
+        <sys_update_name>oauth_entity_51083dc9c39f8350b9523342b40131f8</sys_update_name>
+        <sys_update_version display_value="oauth_entity_51083dc9c39f8350b9523342b40131f8">766a3141c3df8350b9523342b401311f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 18:54:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

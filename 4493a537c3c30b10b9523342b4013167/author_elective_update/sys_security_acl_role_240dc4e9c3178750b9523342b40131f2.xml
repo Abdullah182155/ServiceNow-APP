@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 19:25:59</sys_created_on>
+        <sys_id>240dc4e9c3178750b9523342b40131f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>incident.work_notes.x_2215689_ai_inc_0.integration</sys_name>
+        <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope>
+        <sys_security_acl display_value="incident.work_notes">080472fc938547ba90157435d53b9b55</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_240dc4e9c3178750b9523342b40131f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 19:25:59</sys_updated_on>
+        <sys_user_role display_value="x_2215689_ai_inc_0.integration" name="x_2215689_ai_inc_0.integration">5fc248e4c3db4f10b9523342b4013109</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</application>
+        <file_path/>
+        <instance_id>e980b97d3b382250baf6048aa4e45a36</instance_id>
+        <instance_name>dev323650</instance_name>
+        <name>sys_security_acl_role_240dc4e9c3178750b9523342b40131f2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-12 19:25:59</sys_created_on><sys_id>240dc4e9c3178750b9523342b40131f2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident.work_notes.x_2215689_ai_inc_0.integration</sys_name><sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package><sys_policy/><sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope><sys_security_acl display_value="incident.work_notes">080472fc938547ba90157435d53b9b55</sys_security_acl><sys_update_name>sys_security_acl_role_240dc4e9c3178750b9523342b40131f2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-12 19:25:59</sys_updated_on><sys_user_role display_value="x_2215689_ai_inc_0.integration" name="x_2215689_ai_inc_0.integration">5fc248e4c3db4f10b9523342b4013109</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>416126321</payload_hash>
+        <record_name>incident.work_notes.x_2215689_ai_inc_0.integration</record_name>
+        <reverted_from/>
+        <source>4c93a537c3c30b10b9523342b401317c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 19:26:00</sys_created_on>
+        <sys_id>f07dc42dc3178750b9523342b401316c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a09715722f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 19:26:00</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>b07dc42d92178750c010dc6b78b0d26b</update_guid>
+        <update_guid_history>b07dc42d92178750c010dc6b78b0d26b:416126321</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="incident.work_notes.x_2215689_ai_inc_0.integration">3f5ec4e9c3178750b9523342b401319d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 19:30:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>04c01c17b3f44f98801ee911ef62ce24</sys_id>
+        <sys_metadata>240dc4e9c3178750b9523342b40131f2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>incident.work_notes.x_2215689_ai_inc_0.integration</sys_name>
+        <sys_package display_value="AI Incident Orchestrator" source="x_2215689_ai_inc_0">4493a537c3c30b10b9523342b4013167</sys_package>
+        <sys_parent display_value="incident.work_notes">080472fc938547ba90157435d53b9b55</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AI Incident Orchestrator">4493a537c3c30b10b9523342b4013167</sys_scope>
+        <sys_scope_delete display_value="">10876c311171401a8379100c712f4c24</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_240dc4e9c3178750b9523342b40131f2</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_240dc4e9c3178750b9523342b40131f2">f07dc42dc3178750b9523342b401316c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 19:30:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
